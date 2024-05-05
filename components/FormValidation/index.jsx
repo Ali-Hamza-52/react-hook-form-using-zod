@@ -24,12 +24,10 @@ const index = () => {
         await new Promise((resolve, reject) =>{
             setTimeout(() => {
                 resolve()
-            }, 1000)
+            }, 2000)
         })
         console.log(data)
     }
-
-    // console.log(watch("example"))
 
   return (
     <div>
@@ -73,15 +71,7 @@ export default index
 
 // "use client"
 // import React from 'react'
-// import { zodResolver } from '@hookform/resolvers/zod'
 // import { useForm } from "react-hook-form"
-// import { z } from "zod";
-
-// const schema = z.object({
-//     username: z.string(),
-//     email: z.string().email(),
-//     password: z.string().min(8),
-// })
 
 // const index = () => {
 //     const {
@@ -89,9 +79,7 @@ export default index
 //         handleSubmit,
 //         watch,
 //         formState: { errors, isSubmitting },
-//     } = useForm({
-//         resolver: zodResolver(schema),
-//     })
+//     } = useForm()
 
 //     const onSubmit = async (data) => {
 //         await new Promise((resolve, reject) => {
@@ -102,7 +90,7 @@ export default index
 //         console.log(data)
 //     }
 
-//     // console.log(watch("example"))
+
 
 //     return (
 //         <div>
